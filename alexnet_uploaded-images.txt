@@ -1,0 +1,61 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 3 key-value pairs.
+Below are 3 of them:
+ 1 key:                     dog_01.jpg  label:                        dog
+ 2 key:                     dog_02.jpg  label:                        dog
+ 3 key:                     dog_03.jpg  label:                        dog
+
+     MATCH:
+
+ NOT A MATCH:
+
+                    dog_01.jpg: 
+Real:                        dog   Classifier:       chesapeake bay retriever
+
+                    dog_02.jpg: 
+Real:                        dog   Classifier:               golden retriever
+
+                    dog_03.jpg: 
+Real:                        dog   Classifier:                chow, chow chow
+
+# Total Images 3 # Matches: 0 # NOT Matches: 3
+
+     MATCH:
+
+ NOT A MATCH:
+
+                    dog_01.jpg: 
+Real:                        dog   Classifier:       chesapeake bay retriever  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    dog_02.jpg: 
+Real:                        dog   Classifier:               golden retriever  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    dog_03.jpg: 
+Real:                        dog   Classifier:                chow, chow chow  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 3 # Matches: 0 # NOT Matches: 3
+
+
+*** Results Summary for CNN Model Architecture ALEXNET ***
+N Images            :   3
+N Dog Images        :   3
+N Not-Dog Images : 0 
+summary statistics (percentages) on Model Run
+ pct_match : 0.0
+ pct_correct_dogs : 100.0
+ pct_correct_breed : 0.0
+ pct_correct_notdogs : 0.0
+
+INCORRECT Dog Breed Assignment:
+Real:                        dog   Classifier:       chesapeake bay retriever
+Real:                        dog   Classifier:               golden retriever
+Real:                        dog   Classifier:                chow, chow chow
+
+** Total Elapsed Runtime: 0:4:12
