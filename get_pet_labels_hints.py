@@ -43,7 +43,7 @@ def get_pet_labels(image_dir):
          index 0 = pet image label (string)
     """
     # Creates list of files in directory
-    in_files = listdir(image_dir)
+    in_files = listdir(image_dir) if not f.startswith('.')
     
     # Processes each of the files to create a dictionary where the key
     # is the filename and the value is the picture label (below).

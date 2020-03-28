@@ -48,11 +48,9 @@ def get_pet_labels(image_dir):
         label = ''.join([i for i in image_files[image]
                          .rsplit('.', 1)[0] if not i.isdigit()]).replace("_", ' ').strip()
         
-        if image_files[image] not in results_dic:
+        if image_files[image] not in results_dic and not image_files[image].startswith('.'):
               results_dic[image_files[image]] = [label.lower()]
-    # Replace None with the results_dic dictionary that you created with this
-    # function
 #     print(results_dic)
     return results_dic
 
-get_pet_labels("./pet_images")
+# get_pet_labels("./pet_images")
